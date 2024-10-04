@@ -1,0 +1,172 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white; /* Light blue background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: blue; /* Dark blue */
+  padding: rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+}
+
+.navbar button:hover {
+  background-color: #ffdb58;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 15px;
+}
+
+.navbar-center a {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about-me {
+  background-color: #fff; /* White background */
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-me h2 {
+  color: #0047ab; /* Dark blue */
+}
+
+.carousel {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.carousel img, .carousel video {
+  width: 80%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel-content {
+  margin-top: 1rem;
+  color: green;
+  font-size: 1.2rem;
+}
+
+.twitter-feed, .instagram-feed, .youtube-container, .signup-form {
+  background-color: blue; /* White background */
+  padding: 20px;
+  margin: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.twitter-feed h2, .instagram-feed h2, .youtube-container h2, .signup-form h2 {
+  color: yellow;
+}
+
+.signup-form input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #0047ab;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.signup-form button {
+  background-color: #ffdb58; /* Yellow */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #ffa500; /* Darker yellow on hover */
+}
+
+/* Additional media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .carousel img, .carousel video {
+    width: 100%;
+  }
+
+  .signup-form input[type="email"] {
+    width: 100%;
+  }
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+.shop-page {
+  background-image: url('AciebabyyMerch.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: navy;
+ 
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centers the text */
+}
+
+.shop-page h1,
+.shop-page p {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+  padding: 20px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds shadow behind the text box */
+  display: inline-block;
+}
+
+/* Text shadow for a subtle effect */
+.shop-page h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Black shadow behind text */
+}
+
+.shop-page p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slightly smaller shadow for paragraphs */
+}
+
+
+.signup-form {
+  background-image: url('AciebabyyCommunity.webp');
+  background-size: cover;
+  background-position: center;
+  height: 150vh; /* Optional: Full viewport height */
+}
+.music-page {
+  background-image: url('59-595515_m.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150vh; /* Optional: Full viewport height */
+  color: navy;
+}
+.music-page p {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+  padding: 20px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds shadow behind the text box */
+  display: inline-block;
+}
