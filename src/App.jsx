@@ -1,16 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Carousel from './components/Carousel';
-import TwitterFeed from './components/TwitterFeed';
-import InstagramFeed from './components/InstagramFeed';
 import YouTubeContainer from './components/YouTubeContainer';
 import SignUpForm from './components/SignUpForm';
 import Music from './components/Music';
 import Videos from './components/Videos';
 import Shop from './components/Shop';
-
+import SocialMediaFeeds from './components/SocialMediaFeeds'; // Import SocialMediaFeeds
 
 function App() {
   return (
@@ -21,9 +19,8 @@ function App() {
           <Route path="/" element={
             <>
               <Carousel />
-              <TwitterFeed />
+              <SocialMediaFeeds /> {/* Use SocialMediaFeeds component */}
               <YouTubeContainer />
-              <InstagramFeed />
               <AboutMe />
               <SignUpForm />
             </>

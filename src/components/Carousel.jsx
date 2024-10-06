@@ -2,12 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Carousel = () => {
-
   const [currentIndex, setCurrentIndex] = React.useState(0);
-
-  const handleNext = () => {
-    setCurrentIndex((currentIndex + 1) % 4);
-  };
 
   const slides = [
     {
@@ -28,6 +23,14 @@ const Carousel = () => {
     },
   ];
 
+  const handleNext = () => {
+    setCurrentIndex((currentIndex + 1) % slides.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((currentIndex - 1 + slides.length) % slides.length);
+  };
+
   const currentSlide = slides[currentIndex];
 
   return (
@@ -38,7 +41,16 @@ const Carousel = () => {
         <img src={currentSlide.image} alt="Carousel Slide" />
       )}
       <div className="carousel-content">{currentSlide.content}</div>
-      <button onClick={handleNext}>Next</button>
+
+      {/* Arrows for navigating back and next */}
+      <div className="carousel-arrows">
+        <button onClick={handlePrev} className="carousel-arrow left-arrow">
+          &#9664;
+        </button>
+        <button onClick={handleNext} className="carousel-arrow right-arrow">
+          &#9654;
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,53 +1,72 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: white; /* Light blue background */
-  color: #333;
+  background-color: whitesmoke; /* Black background for a sleek look */
+  color: navy; /* Electric blue text */
   margin: 0;
   padding: 0;
 }
 
+/* Navigation Bar */
 .navbar {
-  background-color: blue; /* Dark blue */
-  padding: rem;
+  background-color: #0047ab; /* Deep Navy */
+  padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Space between logo and nav items */
   align-items: center;
   color: white;
-  
 }
 
-.navbar button:hover {
-  background-color: #ffdb58;
-}
 .navbar a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0 15px;
+  transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.navbar a:hover {
+  color: navy; /* Neon Green on hover */
 }
 
 .navbar-center a {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
+  color: white; /* Electric blue */
+  text-transform: uppercase; /* Bold, capitalized text */
 }
 
+/* About Me Section */
 .about-me {
-  background-color: #fff; /* White background */
-  padding: 2rem;
-  text-align: center;
+  max-width: 800px; /* Limits the width of the text block */
+  margin: 0 auto; /* Centers the text on the page */
+  padding: 20px;
+  font-size: 1.2rem; /* Optional: Adjusts font size */
+  line-height: 1.6; /* Optional: Adds spacing between lines for readability */
+  color: #333;
+  background-color: aliceblue;
+  border-radius: 10px ;
 }
+
 
 .about-me h2 {
-  color: #0047ab; /* Dark blue */
+  color: navy; /* Electric blue for bold heading */
+  font-family: 'Impact', sans-serif; /* Cool, bold typography */
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
+.about-me p {
+  font-size: 1.2rem;
+  color: #333;
+}
 .carousel {
-  margin: 1rem auto;
+  position: relative;
   text-align: center;
 }
 
-.carousel img, .carousel video {
-  width: 80%;
+.carousel img,
+.carousel video {
+  width: 100%;
   max-height: 500px;
   object-fit: cover;
 }
@@ -58,42 +77,148 @@ body {
   font-size: 1.2rem;
 }
 
-.twitter-feed, .instagram-feed, .youtube-container, .signup-form {
-  background-color: blue; /* White background */
-  padding: 20px;
-  margin: 2rem;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Arrows */
+.carousel-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
 }
 
-.twitter-feed h2, .instagram-feed h2, .youtube-container h2, .signup-form h2 {
-  color: yellow;
+.carousel-arrow {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(0, 195, 255);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
 }
 
+.carousel-arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Positioning left and right arrows */
+.left-arrow {
+  position: absolute;
+  left: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px;
+}
+
+/* Signup Form */
+.signup-form input[type="text"],
 .signup-form input[type="email"] {
   padding: 10px;
   font-size: 1rem;
-  border: 2px solid #0047ab;
+  border: 2px solid rgb(0, 72, 255); /* Neon green border */
   border-radius: 5px;
   width: 80%;
   margin-bottom: 1rem;
+  background-color: lightskyblue;
+  color: white;
+}
+
+.signup-form input::placeholder {
+  color: white; /* Ensures the placeholder text is white for visibility */
 }
 
 .signup-form button {
   background-color: #ffdb58; /* Yellow */
-  color: white;
+  color: #000; /* Black text */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .signup-form button:hover {
   background-color: #ffa500; /* Darker yellow on hover */
+  color: navy;
+  transform: scale(1.05); /* Slightly enlarges button on hover */
 }
 
-/* Additional media queries for responsiveness */
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.gallery-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #1500ff; /* Electric blue border */
+}
+
+/* Shop Page */
+.shop-page {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff; /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.shop-page h1, .shop-page p {
+  background-color: rgb(0, 102, 255); /* Dark, semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Cool text shadow */
+}
+
+/* Music Page */
+.music-page {
+  background-image: url('59-595515_m.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150vh;
+  color: #001aff; /* Electric blue text */
+}
+
+/* Typography for Music Page */
+.music-page h1 {
+  font-family: 'Impact', sans-serif;
+  color: rgb(13, 0, 255); /* Neon green */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Buttons */
+button.cool-button {
+  background-color: #00ffff; /* Electric blue */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #000; /* Black text */
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+button.cool-button:hover {
+  background-color: #32cd32; /* Neon green on hover */
+  color: #000;
+  transform: scale(1.1); /* Enlarge button on hover */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -106,67 +231,8 @@ body {
   .signup-form input[type="email"] {
     width: 100%;
   }
-}
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-}
 
-.gallery-image {
-  width: 150px;
-  height: auto;
-  border-radius: 10px;
-}
-.shop-page {
-  background-image: url('AciebabyyMerch.webp');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  color: navy;
- 
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Centers the text */
-}
-
-.shop-page h1,
-.shop-page p {
-  background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
-  padding: 20px; /* Padding around the text */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds shadow behind the text box */
-  display: inline-block;
-}
-
-/* Text shadow for a subtle effect */
-.shop-page h1 {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Black shadow behind text */
-}
-
-.shop-page p {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slightly smaller shadow for paragraphs */
-}
-
-
-.signup-form {
-  background-image: url('AciebabyyCommunity.webp');
-  background-size: cover;
-  background-position: center;
-  height: 150vh; /* Optional: Full viewport height */
-}
-.music-page {
-  background-image: url('59-595515_m.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 150vh; /* Optional: Full viewport height */
-  color: navy;
-}
-.music-page p {
-  background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
-  padding: 20px; /* Padding around the text */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds shadow behind the text box */
-  display: inline-block;
+  .music-page {
+    height: 100vh;
+  }
 }

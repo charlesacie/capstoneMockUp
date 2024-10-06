@@ -1,0 +1,28 @@
+.videos-page {
+    position: relative;
+    background-image: url('');
+    background-color: whitesmoke;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centers the text */
+  }
+  
+  .shop-page h1,
+  .shop-page p {
+    background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+    padding: 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adds shadow behind the text box */
+    display: inline-block;
+  }
+  
+  /* Text shadow for a subtle effect */
+  .shop-page h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Black shadow behind text */
+  }
+  
+  .shop-page p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slightly smaller shadow for paragraphs */
+  }
+  
