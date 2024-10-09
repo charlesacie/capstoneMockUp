@@ -15,9 +15,10 @@ connectToDb()
 app.use(cors());
 app.use(express.json());
 
-// app.get('/', (req, res) => {
-//   res.render('home');
-// });
+app.get('/', (req, res) => {
+  res.send('Welcome to the backend API');
+});
+
 
 const musicRouter = require("./routes/musicRoutes")
 const userRouter = require("./routes/userRoutes")
